@@ -1,0 +1,79 @@
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.instruction {
+  margin-top: 50px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  width: 600px;
+  margin: auto;
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  padding: 5px
+}
+
+p {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  color: white;
+}
+
+.header {
+  height: 100px;
+  width:90%;
+  margin: auto;
+  max-width: 1200px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  
+  align-items: center;
+}
+
+body {
+  background-color: #202c37;
+}
+
+#nft img {
+  height: 256px;
+  width: 256px
+}
+
+.nft {
+  padding: 16px;
+}
