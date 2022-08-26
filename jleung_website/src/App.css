@@ -54,14 +54,13 @@ p {
 }
 
 .header {
-  height: 100px;
+  height: 80px;
   width:90%;
   margin: auto;
   max-width: 1200px;
-  padding: 5px;
   display: flex;
+  padding: 15px 0px 0px 0px;
   justify-content: space-between;
-  
   align-items: center;
 }
 
@@ -71,9 +70,40 @@ body {
 
 #nft img {
   height: 256px;
-  width: 256px
+  width: 256px;
 }
 
 .nft {
   padding: 16px;
+}
+
+.banner {
+    /* The image used */
+    background-image:
+      url('https://media.timeout.com/images/105656190/image.jpg');
+      background-size: cover;
+      height: 500px;
+      background-position: center 850px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      opacity: 0.6;
+  }
+
+  .banner_image{
+    opacity: 1;
+  }
+
+.container {
+  margin-left: 350px;
+}
+
+.banner_text{
+  margin-right: 350px;
+  color: white;
+  opacity: 1;
+}
+
+.img {
+  
 }

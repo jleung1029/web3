@@ -4,6 +4,7 @@ import { MoralisProvider } from 'react-moralis';
 import { ConnectButton } from "@web3uikit/web3";
 import { NFT } from '@web3uikit/web3';
 import logo from "./logo/logo_white_text.png";
+import hero_image from "./logo/transparent_primate.png";
 
 function App() {
   return (
@@ -18,6 +19,17 @@ function App() {
       
       <ConnectButton/>
 
+    </div>
+
+    <div class="banner">
+      <div class="container">
+        <img class="banner_image" src={hero_image} alt="Primate" height="350"></img>
+      </div>
+      <div class="banner_text">
+        <h1>Welcome to the site</h1>
+        <h5>Sign up for free today</h5>
+        <button>Get started</button> 
+      </div>
     </div>
 
     <p className='instruction'>
