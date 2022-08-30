@@ -35,6 +35,7 @@ p {
 
 body {
   background-color: #202c37;
+  font-family: Poppins, sans-serif;
 }
 
 #nft img {
@@ -61,6 +62,7 @@ body {
   }
 
 .container {
+  margin-top: 20px;
   margin-left: 350px;
   margin-right: 350px;
 }
@@ -122,7 +124,7 @@ h1 {
 .title {
   font-weight: bold;
   justify-content: center;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .logo {
@@ -139,6 +141,7 @@ h1 {
   justify-content: space-evenly;
   align-items: center;
   word-wrap: break-word;
+  margin-bottom: 24px;
 }
 
 .turn-white{
@@ -154,4 +157,114 @@ h1 {
   height:100%;
   opacity:0.6;
   border-radius:30px;
+}
+
+.featured-products{
+  background: #2b3844;
+  padding: 35px;
+}
+
+.card-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.card{
+  background: #ffffff;
+  width: 400px;
+  margin: 10px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card h2 {
+  padding: 0px 24px;
+  text-align: left;
+  font-size: 20px;
+}
+
+.card p{
+  color: black;
+  padding: 0px 24px;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.card-image {
+  height: 200px;
+  margin-bottom: 15px;
+  background-size: cover;
+  background-position: top center;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.card a {
+  background-color: #2b3844;
+  color: #ffffff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 32px;
+  box-sizing: border-box;
+  margin-top: auto;
+  margin-bottom: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+  font-size: 14px;
+}
+
+.card a:hover {
+  background-color: rgb(108, 108, 108);
+  color: #ffffff;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: all is ease;
+}
+
+.image-1{
+  background-image: url("./featured_products/crypto.com.jpg")
+}
+
+.image-2{
+  background-image: url("./featured_products/bupa_optical.jpg")
+}
+
+.image-3{
+  background-image: url("./featured_products/bupa_dental.jpg")
+}
+
+.image-4{
+  background-image: url("./featured_products/voxel_ville_2.jpg")
+}
+
+.image-5{
+  background-image: url("./featured_products/ap_warehouse.png")
+}
+
+.image-6{
+  background-image: url("./featured_products/alive_digital.png")
+}
+
+.image-7{
+  background-image: url("./featured_products/crunch_wheels.jpg")
+}
+
+.linkedin-recommendation{
+  background: #384755;
+  padding: 35px;
+}
+
+.linkedin-icon{
+  margin-right: 10px;
+  size: 20px;
 }

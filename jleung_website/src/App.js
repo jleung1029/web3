@@ -42,7 +42,7 @@ function App() {
               <p>
                 Building Fintech, Crypto & Web3 products to global users 🚀
                 <br></br>
-                Product Manager with 3+ years in Tech & Crypto <FcManager size="1.25em"/>
+                Product Manager with 3+ years in Tech & Engineering <FcManager size="1.25em"/>
                 <br></br>
                 aussietechbloke.eth <FaEthereum size="1.15em" color="#7986CB"/>
                 <br></br>
@@ -68,22 +68,83 @@ function App() {
       
       <div class="container">
         <p className='header title'>
-        Built products for ...
+          Built products for ...
         </p>
-        <section class="customer-logos slider">
-          <div class="slide"><img class="logo" src={ cdc_logo } alt = "cdc_logo"></img></div>
-          <div class="slide"><img class="logo" src={ bupa_logo } alt = "bupa_logo"></img></div>
-          <div class="slide"><img class="logo" src={ vv_logo } alt = "vv_logo"></img></div>
-          <div class="slide"><img class="logo turn-white" src={ cd_logo } alt = "cd_logo"></img></div>
-          <div class="slide"><img class="logo turn-white" src={ dcn_logo } alt = "dcn_logo"></img></div>
-          <div class="slide"><img class="logo" src={ alive_logo } alt = "alive_logo"></img></div>
-          <div class="slide"><img class="logo" src={ ap_logo } alt = "ap_logo"></img></div>
-          <div class="slide"><img class="logo turn-white" src={ cw_logo } alt = "cw_logo"></img></div>
-          <div class="slide"><img class="logo" src={ spt_logo } alt = "spt_logo"></img></div>
-          <div class="slide"><img class="logo turn-white" src={ mb_logo } alt = "mb_logo"></img></div>
-      </section>
+        <section class="customer-logos">
+          <img class="logo" src={ cdc_logo } alt = "cdc_logo"></img>
+          <img class="logo" src={ bupa_logo } alt = "bupa_logo"></img>
+          <img class="logo" src={ vv_logo } alt = "vv_logo"></img>
+          <img class="logo turn-white" src={ cd_logo } alt = "cd_logo"></img>
+          <img class="logo turn-white" src={ dcn_logo } alt = "dcn_logo"></img>
+          <img class="logo" src={ alive_logo } alt = "alive_logo"></img>
+          <img class="logo" src={ ap_logo } alt = "ap_logo"></img>
+          <img class="logo turn-white" src={ cw_logo } alt = "cw_logo"></img>
+          <img class="logo" src={ spt_logo } alt = "spt_logo"></img>
+          <img class="logo turn-white" src={ mb_logo } alt = "mb_logo"></img>
+        </section>
       </div>
-    
+
+      <section class ="featured-products">
+        <p className='header title'>
+          Featured Products
+        </p>
+        <div class="card-container">
+          <div class="card">
+              <div class="card-image image-1"></div>
+              <h2> Crypto.com NFT | Top Collections Page </h2>
+              <p> A page that shows data insights of the hottest collections on 
+                Crypto.com NFT ranked by volume, floor price, and other metrics. </p>
+              <a href="https://crypto.com/nft/top-collections">READ MORE</a>
+          </div>
+          <div class="card">
+              <div class="card-image image-2"></div>
+              <h2> Bupa Optical </h2>
+              <p> AR 3D Glasses Try-on, shopping experience enhancements, myBupa integration
+                automatic insurance claiming, prefilled prescriptions </p>
+              <a href="https://bupaoptical.bupa.com.au/">READ MORE</a>
+          </div>
+          <div class="card">
+            <div class="card-image image-3"></div>
+            <h2> Bupa Dental </h2>
+            <p> Online Booking, Dental Clinic search functionality & user experience </p>
+            <a href="https://www.bupadental.com.au/">READ MORE</a>
+          </div>
+          <div class="card">
+            <div class="card-image image-4"></div>
+            <h2> Voxel Ville </h2>
+            <p> Grew the NFT collection from 300 members to 35,000 members & helped 
+              the collection achieved a trading volume of 2,100 ETH (equiv. 3.8M USD) </p>
+            <a href="https://opensea.io/collection/voxel-ville-official">READ MORE</a>
+          </div>
+          <div class="card">
+            <div class="card-image image-5"></div>
+            <h2> AP Warehouse </h2>
+            <p> Helped 10x monthly visits on AP Warehouse's Google Maps & website visits
+                and built an online store end-to-end with 3 engineers </p>
+            <a href="https://apwarehouse.com.au/">READ MORE</a>
+          </div>
+          <div class="card">
+            <div class="card-image image-6"></div>
+            <h2> Alive Digital </h2>
+            <p> Led the development team and development of the online store for AP Warehouse. </p>
+            <a href="http://alivedigital.info/">READ MORE</a>
+          </div>
+          <div class="card">
+            <div class="card-image image-7"></div>
+            <h2> Crunch Wheels </h2>
+            <p> First experimental online store built with social media marketing - achieved $1000 in revenue in 1 month. </p>
+            <a href="https://www.facebook.com/crunchwheels">READ MORE</a>
+          </div>
+        </div>
+      </section>
+
+      <section class ="linkedin-recommendation">
+        <p className='header title'>
+        <IconContext.Provider value = {{className: "linkedin-icon"}}>
+        <BsLinkedin/> Linkedin Recommendations 
+        </IconContext.Provider>
+        </p>
+      </section>
     </MoralisProvider>
   );
 }
