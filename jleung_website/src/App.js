@@ -41,9 +41,10 @@ function App() {
             <div class="banner_text">
               <h1>Jones Leung</h1>
               <p>
-                Building Fintech, Crypto & Web3 products to global users 🚀
+                Building <span style={{fontWeight: "bold"}}>Fintech, Crypto & Web3 Products</span> to Global Users 🚀
                 <br></br>
-                Product Manager with 3+ years in Tech & Engineering <FcManager size="1.25em"/>
+                <span style={{fontWeight: "bold"}}>
+                  Product Manager with 3+ Years </span> in Tech & Engineering <FcManager size="1.25em"/>
                 <br></br>
                 aussietechbloke.eth <FaEthereum size="1.15em" color="#7986CB"/>
                 <br></br>
