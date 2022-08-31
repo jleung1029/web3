@@ -5,8 +5,8 @@ import { ConnectButton } from "@web3uikit/web3";
 import logo from "./logo/logo_white_text.png";
 import hero_image from "./logo/transparent_primate.png";
 import { FaEthereum, FaTwitter } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
-import { BsLinkedin, BsFillFileEarmarkTextFill } from "react-icons/bs";
+import { MdEmail, MdLocationOn } from "react-icons/md";
+import { BsLinkedin, BsFillFileEarmarkTextFill, BsChatRightDotsFill } from "react-icons/bs";
 import { FcManager } from "react-icons/fc";
 import { IconContext } from 'react-icons/lib';
 import  cdc_logo from "./logo/companies/cdc_logo.png";
@@ -19,6 +19,7 @@ import  ap_logo from "./logo/companies/ap_logo_1.png";
 import  cw_logo from "./logo/companies/cw_logo.png";
 import  spt_logo from "./logo/companies/spt_logo.png";
 import  mb_logo from "./logo/companies/mb_logo.png";
+import Testimonial from "./Testimonial";
 
 function App() {
   return (
@@ -140,10 +141,54 @@ function App() {
 
       <section class ="linkedin-recommendation">
         <p className='header title'>
-        <IconContext.Provider value = {{className: "linkedin-icon"}}>
-        <BsLinkedin/> Linkedin Recommendations 
-        </IconContext.Provider>
+          <IconContext.Provider value = {{className: "linkedin-icon"}}>
+            <BsLinkedin/> Linkedin Recommendations 
+          </IconContext.Provider>
         </p>
+
+        <div class="testimonial">
+          <Testimonial/>
+        </div>
+
+        <div class="view-all">
+          <a class="btn" href='https://www.linkedin.com/in/jones-leung/details/recommendations/'> View all</a>
+        </div>
+      </section>
+
+      <section class ="footer">
+        <IconContext.Provider value = {{size: "1.5em", className: "social-media"}}>
+          <div class ="footer-wrapper">
+            <a href="https://www.linkedin.com/in/jones-leung/">
+              <BsLinkedin/>
+            </a>
+            <a href="https://twitter.com/aussietechbloke">
+              <FaTwitter/>
+            </a>
+            <a href="mailto:jonesl029@gmail.com">
+              <MdEmail/>
+            </a>
+            <a href="https://drive.google.com/file/d/1ZFqai1Y6ByfEfPbIHlYvM35hhI_3cyIn/view?usp=sharing">
+              <BsFillFileEarmarkTextFill/>
+            </a>
+          </div>
+        </IconContext.Provider>
+
+        <IconContext.Provider value = {{size: "1em"}}>
+          <div class="footer-text">
+            <div class="footer-location">
+              <MdLocationOn/> Sydney, Australia (Remote Friendly)
+            </div>
+          </div>
+        </IconContext.Provider>
+
+        <IconContext.Provider value = {{size: "1em", className:"language-icon"}}>
+          <div class="footer-text">
+            <div class="footer-language">
+              <BsChatRightDotsFill/> English | Mandarin | Cantonese
+            </div>
+          </div>
+        </IconContext.Provider>
+
       </section>
     </MoralisProvider>
   );
