@@ -65,6 +65,7 @@ body {
   margin-top: 20px;
   margin-left: 350px;
   margin-right: 350px;
+  margin-bottom: 30px;
 }
 
 .primate {
@@ -129,9 +130,7 @@ h1 {
 
 .logo {
   height: 60px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 40px;
+  margin: 30px 20px;
 }
 
 .customer-logos {
@@ -141,7 +140,6 @@ h1 {
   justify-content: space-evenly;
   align-items: center;
   word-wrap: break-word;
-  margin-bottom: 24px;
 }
 
 .turn-white{
