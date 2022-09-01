@@ -30,3 +30,26 @@
 .testimonial .slick-dots li{
     top: 15px;
 }
+
+.testimonial-card {
+    width: 50%;
+}
+
+
+@media only screen and (max-width: 700px){
+    .testimonial-card p{
+        font-size: 16px;
+    }
+
+    .testimonial-card {
+        width: 85%;
+    }
+
+    .slick-arrow.slick-next {
+        right: -40px;
+    }
+    
+    .slick-arrow.slick-prev {
+        left: -40px;
+    }
+}

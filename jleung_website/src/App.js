@@ -1,9 +1,9 @@
 import './App.css';
-import React from 'react';
+import React, {useState} from 'react';
 import { MoralisProvider } from 'react-moralis';
 import { ConnectButton } from "@web3uikit/web3";
-import logo from "./logo/logo_white_text.png";
-import hero_image from "./logo/transparent_primate.png";
+import logo from "./logo/logo_white_text_cropped.png";
+import hero_image from "./logo/transparent_primate_cropped.png";
 import { FaEthereum, FaTwitter } from "react-icons/fa";
 import { MdEmail, MdLocationOn } from "react-icons/md";
 import { BsLinkedin, BsFillFileEarmarkTextFill, BsChatRightDotsFill } from "react-icons/bs";
@@ -20,70 +20,103 @@ import  cw_logo from "./logo/companies/cw_logo.png";
 import  spt_logo from "./logo/companies/spt_logo.png";
 import  mb_logo from "./logo/companies/mb_logo.png";
 import Testimonial from "./Testimonial";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 function App() {
+
+  const [show, setShow]=useState(false)
+
   return (
     <MoralisProvider
             appId="sku1MiaPy1yCMEyfglToINywAr5tWq3s9S2mMMY0"
             serverUrl="https://q2nwge8o4kjj.usemoralis.com:2053/server">
-
+      
       <div className="header">
-        <img src={logo} alt="logo" height ="120px"/>
-          <ConnectButton class="connect_button"/>
+        <div class="navbar">
+          <img src={logo} class="nav_logo" alt="logo" height ="120px"/>
+          <nav class="menulist-desktop"><ConnectButton class="connect_button"/></nav>
+          {
+            show?<nav class="menulist-mobile"><ConnectButton class="connect_button"/></nav>:null
+          }
+          <div class="menu-icon" onClick={()=>setShow(!show)}>
+            <GiHamburgerMenu color="white" size="3em"/>
+          </div>
+        </div>
       </div>
 
       <div class="banner">
-        <div class="banner_image"></div>
-          <div class="banner_content">
-            <a class="primate_link" href="https://magiceden.io/marketplace/primates">
-              <img class="primate" src={hero_image} alt="Primate" height="350"></img>
-            </a>
-            <div class="banner_text">
-              <h1>Jones Leung</h1>
-              <p>
-                Building <span style={{fontWeight: "bold"}}>Fintech, Crypto & Web3 Products</span> to Global Users 🚀
-                <br></br>
-                <span style={{fontWeight: "bold"}}>
-                  Product Manager with 3+ Years </span> in Tech & Engineering <FcManager size="1.25em"/>
-                <br></br>
-                aussietechbloke.eth <FaEthereum size="1.15em" color="#7986CB"/>
-                <br></br>
+          <div class="banner_image">
 
-              </p>
-              <IconContext.Provider value = {{size: "1em", className: "icon"}}>
-              <div class="banner_buttons">
-                <a class="btn" href="https://www.linkedin.com/in/jones-leung/">
-                  <BsLinkedin/> Linkedin
-                </a>
-                <a class="btn" href="https://twitter.com/aussietechbloke">
-                  <FaTwitter/> Twitter</a> 
-                <a class="btn" href="mailto:jonesl029@gmail.com">
-                  <MdEmail/> Mail</a> 
-                <a class="btn" href="https://drive.google.com/file/d/1ZFqai1Y6ByfEfPbIHlYvM35hhI_3cyIn/view?usp=sharing">
-                  <BsFillFileEarmarkTextFill/> Resume</a> 
+          </div>
+          <div class="banner_content">
+            <div class="col-1">
+              <a class="primate_link" href="https://magiceden.io/marketplace/primates">
+                <img class="primate" src={hero_image} alt="Primate" height="300"></img>
+              </a>
+            </div>
+
+            <div class="col-2">
+              <div class="banner_text">
+                <h1>Jones Leung</h1>
+                <p class="mobile" style={{color: "#eceff1"}}>
+                  <p class="p-1">
+                    🚀 Building <span style={{fontWeight: "bold"}}>Fintech, Crypto & Web3 Products</span> to Global Users 
+                  </p>
+                  <p class="p-2">
+                  <span style={{fontWeight: "bold"}}>
+                  <FcManager size="1.25em"/> Product Manager with 3+ Years </span> in Tech & Engineering 
+                  </p>
+                  <p class="p-3">
+                  <FaEthereum size="1.15em" color="#7986CB"/> aussietechbloke.eth 
+                  </p>
+                </p>
+                <p class="desktop" style={{color: "#eceff1"}}>
+                  Building <span style={{fontWeight: "bold"}}>Fintech, Crypto & Web3 Products</span> to Global Users 🚀
+                  <br></br>
+                  <span style={{fontWeight: "bold"}}>
+                  Product Manager with 3+ Years </span> in Tech & Engineering <FcManager size="1.25em"/>
+                  <br></br>
+                  aussietechbloke.eth <FaEthereum size="1.15em" color="#7986CB"/>
+                  <br></br>
+                </p>
+                <IconContext.Provider value = {{size: "1em", className: "icon"}}>
+                  <div class="banner_buttons">
+                    <a class="btn" href="https://www.linkedin.com/in/jones-leung/">
+                      <BsLinkedin/> Linkedin
+                    </a>
+                    <a class="btn" href="https://twitter.com/aussietechbloke">
+                      <FaTwitter/> Twitter</a> 
+                    <a class="btn" href="mailto:jonesl029@gmail.com">
+                      <MdEmail/> Mail</a> 
+                    <a class="btn" href="https://drive.google.com/file/d/1ZFqai1Y6ByfEfPbIHlYvM35hhI_3cyIn/view?usp=sharing">
+                      <BsFillFileEarmarkTextFill/> Resume</a> 
+                  </div>
+                </IconContext.Provider>
               </div>
-              </IconContext.Provider>
-          </div>      
+            </div> 
+          
         </div>
       </div>
         
       
       <div class="container">
-        <p className='header title'>
-          Built products for ...
-        </p>
-        <section class="customer-logos">
-          <img class="logo" src={ cdc_logo } alt = "cdc_logo"></img>
-          <img class="logo" src={ bupa_logo } alt = "bupa_logo"></img>
-          <img class="logo" src={ vv_logo } alt = "vv_logo"></img>
-          <img class="logo turn-white" src={ cd_logo } alt = "cd_logo"></img>
-          <img class="logo turn-white" src={ dcn_logo } alt = "dcn_logo"></img>
-          <img class="logo" src={ alive_logo } alt = "alive_logo"></img>
-          <img class="logo" src={ ap_logo } alt = "ap_logo"></img>
-          <img class="logo turn-white" src={ cw_logo } alt = "cw_logo"></img>
-          <img class="logo" src={ spt_logo } alt = "spt_logo"></img>
-          <img class="logo turn-white" src={ mb_logo } alt = "mb_logo"></img>
-        </section>
+        <div class="build-products-container">
+          <p className='header title'>
+            Built Products For ...
+          </p>
+          <section class="customer-logos">
+            <img class="logo" src={ cdc_logo } alt = "cdc_logo"></img>
+            <img class="logo" src={ bupa_logo } alt = "bupa_logo"></img>
+            <img class="logo" src={ vv_logo } alt = "vv_logo"></img>
+            <img class="logo turn-white" src={ cd_logo } alt = "cd_logo"></img>
+            <img class="logo turn-white" src={ dcn_logo } alt = "dcn_logo"></img>
+            <img class="logo" src={ alive_logo } alt = "alive_logo"></img>
+            <img class="logo" src={ ap_logo } alt = "ap_logo"></img>
+            <img class="logo turn-white" src={ cw_logo } alt = "cw_logo"></img>
+            <img class="logo" src={ spt_logo } alt = "spt_logo"></img>
+            <img class="logo turn-white" src={ mb_logo } alt = "mb_logo"></img>
+          </section>
+        </div>
       </div>
 
       <section class ="featured-products">
@@ -143,7 +176,7 @@ function App() {
       <section class ="linkedin-recommendation">
         <p className='header title'>
           <IconContext.Provider value = {{className: "linkedin-icon"}}>
-            <BsLinkedin/> Linkedin Recommendations 
+            <BsLinkedin/> Linkedin References 
           </IconContext.Provider>
         </p>
 
@@ -189,7 +222,6 @@ function App() {
             </div>
           </div>
         </IconContext.Provider>
-
       </section>
     </MoralisProvider>
   );

@@ -27,7 +27,7 @@ const NextBtn = (props) => {
 
 const FirstCard = () => {
     return (
-        <div>
+        <div class="card-content">
             <span>
                 <p>"Jones was an Associate Product Manager on my team at 
                     Crypto.com, and it was an absolute pleasure working with 
@@ -51,7 +51,7 @@ const FirstCard = () => {
 
 const SecondCard = () => {
     return (
-        <div>
+        <div class="card-content">
             <p>"I had the pleasure of working closely with Jones for almost two years. I enjoyed working with him. He is such a brilliant individual with excellent interpersonal skills, bringing positive energy to the team. 
             <br></br>
             <br></br>
@@ -71,7 +71,7 @@ const SecondCard = () => {
 
 const ThridCard = () => {
     return (
-        <div>
+        <div class="card-content">
             <p>"I’ve had the pleasure of working with Jones for more than six months. In that time he has significantly enhanced the delivery team’s testing capabilities, introducing automation practices while also pitching in whenever needed to assist the team’s manual tester. 
             <br></br>
             <br></br>
@@ -93,7 +93,7 @@ function Testimonial() {
         <div class="testimonial" style={{display:"flex", 
         justifyContent:"center", marginTop: 15,
         marginBottom: 25}}>
-            <div class="testimonial-card" style={{width:"50%"}}>
+            <div class="testimonial-card">
                 <Slider prevArrow={<PrevBtn/>}
                     nextArrow={<NextBtn/>}
                     dots>
