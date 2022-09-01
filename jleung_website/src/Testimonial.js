@@ -40,7 +40,7 @@ const FirstCard = () => {
                     product and drive it forward, I would highly recommend Jones."
                 </p>
                 <p style ={{fontStyle:"italic", marginTop: 50, marginBottom: 25}}>
-                    Senior Product Manager,<span style={{
+                    Head of NFT, Director (Product),<span style={{
                         fontWeight: "bold"
                     }}> Crypto.com</span>
                 </p>
