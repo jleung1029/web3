@@ -88,7 +88,7 @@ function App() {
                       <FaTwitter/> Twitter</a> 
                     <a class="btn" href="mailto:jonesl029@gmail.com">
                       <MdEmail/> Mail</a> 
-                    <a class="btn" href="https://drive.google.com/file/d/1ZFqai1Y6ByfEfPbIHlYvM35hhI_3cyIn/view?usp=sharing">
+                    <a class="btn" href="https://drive.google.com/file/d/1SvKC1pC3aAbN6Y27Duar7yGgBNOz_8SM/view?usp=sharing">
                       <BsFillFileEarmarkTextFill/> Resume</a> 
                   </div>
                 </IconContext.Provider>
