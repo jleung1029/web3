@@ -88,7 +88,7 @@ function App() {
                       <FaTwitter/> Twitter</a> 
                     <a class="btn" href="mailto:jonesl029@gmail.com">
                       <MdEmail/> Mail</a> 
-                    <a class="btn" href="https://drive.google.com/file/d/1SvKC1pC3aAbN6Y27Duar7yGgBNOz_8SM/view?usp=sharing">
+                    <a class="btn" href="https://drive.google.com/drive/folders/1eRM3EtRNju70Cq5jfz16DEbZK88axNal?usp=sharing">
                       <BsFillFileEarmarkTextFill/> Resume</a> 
                   </div>
                 </IconContext.Provider>
@@ -201,7 +201,7 @@ function App() {
             <a href="mailto:jonesl029@gmail.com">
               <MdEmail/>
             </a>
-            <a href="https://drive.google.com/file/d/1ZFqai1Y6ByfEfPbIHlYvM35hhI_3cyIn/view?usp=sharing">
+            <a href="https://drive.google.com/drive/folders/1eRM3EtRNju70Cq5jfz16DEbZK88axNal?usp=sharing">
               <BsFillFileEarmarkTextFill/>
             </a>
           </div>
