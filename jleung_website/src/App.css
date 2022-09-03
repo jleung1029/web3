@@ -309,6 +309,10 @@ h1 {
   background-image: url("./featured_products/crunch_wheels.jpg")
 }
 
+.image-cdc-marketplace{
+  background-image: url("./featured_products/crypto.com_marketplace.jpg")
+}
+
 .linkedin-recommendation{
   background: #384755;
   padding: 35px;
