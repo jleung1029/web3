@@ -21,15 +21,24 @@ import  spt_logo from "./logo/companies/spt_logo.png";
 import  mb_logo from "./logo/companies/mb_logo.png";
 import Testimonial from "./Testimonial";
 import { GiHamburgerMenu } from "react-icons/gi";
+// import ReactGa from "react-ga";
 
 function App() {
 
   const [show, setShow]=useState(false)
 
+  // useEffect(() => {
+  //   ReactGa.initialize('G-5PGC4JBX9L')
+
+  //   // to report page view
+  //   ReactGa.pageview('/')
+  // }, [])
+
   return (
     <MoralisProvider
             appId="sku1MiaPy1yCMEyfglToINywAr5tWq3s9S2mMMY0"
             serverUrl="https://q2nwge8o4kjj.usemoralis.com:2053/server">
+      
       
       <div className="header">
         <div class="navbar">
@@ -124,10 +133,16 @@ function App() {
           Featured Products
         </p>
         <div class="card-container">
+        <div class="card">
+              <div class="card-image image-cdc-marketplace"></div>
+              <h2> Crypto.com NFT | Revamp </h2>
+              <p> A big UX/UI revamp of the Marketplace, Search Results, Collection & Brand page. </p>
+              <a href="https://crypto.com/nft/marketplace">READ MORE</a>
+          </div>
           <div class="card">
               <div class="card-image image-1"></div>
-              <h2> Crypto.com NFT | Top Collections Page </h2>
-              <p> A page that shows data insights of the hottest collections on 
+              <h2> Crypto.com NFT | Top Collections </h2>
+              <p> A page for our users to discover the hottest collections on 
                 Crypto.com NFT ranked by volume, floor price, and other metrics. </p>
               <a href="https://crypto.com/nft/top-collections">READ MORE</a>
           </div>
