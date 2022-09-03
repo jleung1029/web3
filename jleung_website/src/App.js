@@ -150,27 +150,27 @@ function App() {
               <div class="card-image image-2"></div>
               <h2> Bupa Optical </h2>
               <p> AR 3D Glasses Try-on, shopping experience enhancements, myBupa integration
-                automatic insurance claiming, prefilled prescriptions </p>
+                automatic insurance claiming, prefilled prescriptions. </p>
               <a href="https://bupaoptical.bupa.com.au/">READ MORE</a>
           </div>
           <div class="card">
             <div class="card-image image-3"></div>
             <h2> Bupa Dental </h2>
-            <p> Online Booking, Dental Clinic search functionality & user experience </p>
+            <p> Online Booking, Dental Clinic search functionality & user experience. </p>
             <a href="https://www.bupadental.com.au/">READ MORE</a>
           </div>
           <div class="card">
             <div class="card-image image-4"></div>
             <h2> Voxel Ville </h2>
             <p> Grew the NFT collection from 300 members to 35,000 members & helped 
-              the collection achieved a trading volume of 2,100 ETH (equiv. 3.8M USD) </p>
+              the collection achieved a trading volume of 2,100 ETH (equiv. 3.8M USD). </p>
             <a href="https://opensea.io/collection/voxel-ville-official">READ MORE</a>
           </div>
           <div class="card">
             <div class="card-image image-5"></div>
             <h2> AP Warehouse </h2>
             <p> Helped 10x monthly visits on AP Warehouse's Google Maps & website visits
-                and built an online store end-to-end with 3 engineers </p>
+                and built an online store end-to-end with 3 engineers. </p>
             <a href="https://apwarehouse.com.au/">READ MORE</a>
           </div>
           <div class="card">
