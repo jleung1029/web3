@@ -211,6 +211,7 @@ h1 {
 .featured-products{
   background: #2b3844;
   padding: 20px;
+  padding-bottom: 30px;
 }
 
 .card-container{
@@ -220,7 +221,7 @@ h1 {
   flex-wrap: wrap;
   padding-left: 8%;
   padding-right: 8%;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
 }
 
 .card{
@@ -313,6 +314,23 @@ h1 {
   background-image: url("./featured_products/crypto.com_marketplace.jpg")
 }
 
+/* .card:nth-child(1),
+.card:nth-child(2),
+.card:nth-child(3),
+.card:nth-child(4) {
+  display: flex
+} */
+
+.card:nth-child(n+7){
+  display: none;
+}
+
+.load-more-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .linkedin-recommendation{
   background: #384755;
   padding: 35px;
@@ -376,7 +394,19 @@ p.desktop {
     padding: 100px 10%;
   }
 
+  .card{
+    background: #ffffff;
+    width: 350px;
+    margin: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+  }
 
+  .card-container{
+    padding-left: 2%;
+    padding-right: 2%;
+  }
 }
 
 
@@ -490,6 +520,10 @@ p.desktop {
     margin-right: 0.6rem;
     font-size: 1em;
   }
+  
+  .section-btn{
+    margin-left: 0.6rem;
+  }
 
   div.banner_buttons{
     text-align: left;
@@ -498,6 +532,10 @@ p.desktop {
   .card:hover {
     transform: scale(1.0);
     transition: all is ease;
+  }
+
+  .card:nth-child(n+6){
+    display: none;
   }
   
 }
