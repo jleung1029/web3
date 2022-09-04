@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick-theme.css"
 import "./Testimonial.css"
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 
+
 const PrevBtn = (props) => {
     console.log(props);
     const {className, onClick} = props;

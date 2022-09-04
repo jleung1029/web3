@@ -2,7 +2,7 @@ import './App.css';
 import React, {useState} from 'react';
 import { MoralisProvider } from 'react-moralis';
 import { ConnectButton } from "@web3uikit/web3";
-import logo from "./logo/logo_white_text_cropped.png";
+import logo from "./logo/logo_white_text.png";
 import hero_image from "./logo/transparent_primate_cropped.png";
 import { FaEthereum, FaTwitter } from "react-icons/fa";
 import { MdEmail, MdLocationOn } from "react-icons/md";
@@ -27,6 +27,17 @@ function App() {
 
   const [show, setShow]=useState(false)
 
+  const onLoadMore = () => {
+
+    let loadMoreBtn = document.querySelector("#load-more");
+
+    let boxes = [...document.querySelectorAll(".card")];
+    for (var i = 0; i < boxes.length; i++){
+      boxes[i].style.display = "flex";
+    }
+    loadMoreBtn.style.display = "none";
+  }
+  
   // useEffect(() => {
   //   ReactGa.initialize('G-5PGC4JBX9L')
 
@@ -36,8 +47,8 @@ function App() {
 
   return (
     <MoralisProvider
-            appId="sku1MiaPy1yCMEyfglToINywAr5tWq3s9S2mMMY0"
-            serverUrl="https://q2nwge8o4kjj.usemoralis.com:2053/server">
+            appId="L8NZn83bUTL22zRWyHA14r32JxQI2VIx5l7Gp08H"
+            serverUrl="https://kskiqs8elshe.usemoralis.com:2053/server">
       
       
       <div className="header">
@@ -69,23 +80,23 @@ function App() {
                 <h1>Jones Leung</h1>
                 <p class="mobile" style={{color: "#eceff1"}}>
                   <p class="p-1">
-                    🚀 Building <span style={{fontWeight: "bold"}}>Fintech, Crypto & Web3 Products</span> to Global Users 
+                    🚀 Building <span style={{fontWeight: "bold"}}>Fintech & Crypto Products</span> For Global Users 
                   </p>
                   <p class="p-2">
                   <span style={{fontWeight: "bold"}}>
                   <FcManager size="1.25em"/> Product Manager with 3+ Years </span> in Tech & Engineering 
                   </p>
                   <p class="p-3">
-                  <FaEthereum size="1.15em" color="#7986CB"/> aussietechbloke.eth 
+                  <FaEthereum size="1.15em" color="#7986CB"/><span style={{fontWeight: "bold"}}> aussietechbloke.eth </span>
                   </p>
                 </p>
                 <p class="desktop" style={{color: "#eceff1"}}>
-                  Building <span style={{fontWeight: "bold"}}>Fintech, Crypto & Web3 Products</span> to Global Users 🚀
+                  Building <span style={{fontWeight: "bold"}}>Fintech & Crypto Products</span> For Global Users 🚀
                   <br></br>
                   <span style={{fontWeight: "bold"}}>
                   Product Manager with 3+ Years </span> in Tech & Engineering <FcManager size="1.25em"/>
                   <br></br>
-                  aussietechbloke.eth <FaEthereum size="1.15em" color="#7986CB"/>
+                  <span style={{fontWeight: "bold"}}>aussietechbloke.eth</span> <FaEthereum size="1.15em" color="#7986CB"/>
                   <br></br>
                 </p>
                 <IconContext.Provider value = {{size: "1em", className: "icon"}}>
@@ -186,6 +197,9 @@ function App() {
             <a href="https://www.facebook.com/crunchwheels">READ MORE</a>
           </div>
         </div>
+        <div class="load-more-section">
+          <div id="load-more" class="btn section-btn" onClick={onLoadMore}> Load More </div>
+        </div>
       </section>
 
       <section class ="linkedin-recommendation">
@@ -200,7 +214,7 @@ function App() {
         </div>
 
         <div class="view-all">
-          <a class="btn" href='https://www.linkedin.com/in/jones-leung/details/recommendations/'> View all</a>
+          <a class="btn section-btn" href='https://www.linkedin.com/in/jones-leung/details/recommendations/'> View all</a>
         </div>
       </section>
 
