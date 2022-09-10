@@ -1,6 +1,6 @@
 import './App.css';
 import React, {useState} from 'react';
-import { MoralisProvider } from 'react-moralis';
+import { MoralisProvider, useMoralis } from 'react-moralis';
 import { ConnectButton } from "@web3uikit/web3";
 import logo from "./logo/logo_white_text.png";
 import hero_image from "./logo/transparent_primate_cropped.png";
@@ -37,23 +37,30 @@ function App() {
     }
     loadMoreBtn.style.display = "none";
   }
-  
-  // useEffect(() => {
-  //   ReactGa.initialize('G-5PGC4JBX9L')
 
-  //   // to report page view
-  //   ReactGa.pageview('/')
-  // }, [])
+  const User = () => {
+    const { authenticate, isAuthenticated } = useMoralis();
+  
+    if (!isAuthenticated) {
+      return (
+        <div>
+          <button onClick={() => authenticate()}>Authenticate</button>
+        </div>
+      );
+    }
+  };
 
   return (
     <MoralisProvider
             appId="L8NZn83bUTL22zRWyHA14r32JxQI2VIx5l7Gp08H"
-            serverUrl="https://kskiqs8elshe.usemoralis.com:2053/server">
-      
+            serverUrl="https://kskiqs8elshe.usemoralis.com:2053/server"
+            initializeOnMount={false}>
       
       <div className="header">
         <div class="navbar">
-          <img src={logo} class="nav_logo" alt="logo" height ="120px"/>
+          <a href='https://jleung.xyz'>
+            <img src={logo} class="nav_logo" alt="logo" height ="120px"/>
+          </a>
           <nav class="menulist-desktop"><ConnectButton class="connect_button"/></nav>
           {
             show?<nav class="menulist-mobile"><ConnectButton class="connect_button"/></nav>:null
