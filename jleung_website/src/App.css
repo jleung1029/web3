@@ -38,6 +38,37 @@ nav {
   text-align: right;
 }
 
+nav>div{
+  display: flex;
+  justify-content: right;
+}
+
+div>nav span {
+  color:#000d0f !important;
+  font-size: 1.15em !important;
+}
+
+div>nav button:hover span,
+div>nav button:focus span {
+  color: #ffffff !important;
+}
+
+div>nav button:hover,
+div>nav button:focus {
+  color: #ffffff !important;
+  fill: #ffffff !important;
+  background-color: rgb(156, 156, 156) !important;
+}
+
+
+
+.btn:hover, .btn:focus {
+  color: #ffffff !important;
+  background-color: rgb(156, 156, 156) !important;
+  border-color: rgb(156, 156, 156) !important;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 20%);
+}
+
 nav button {
   margin-left: auto;
   margin-right: 0px;
@@ -383,7 +414,7 @@ p.desktop {
   display: block;
 }
 
-@media only screen and (max-width: 1400px){
+@media only screen and (max-width: 1550px){
 
   .header {
     padding-left: 10%;
@@ -406,6 +437,10 @@ p.desktop {
   .card-container{
     padding-left: 2%;
     padding-right: 2%;
+  }
+
+  .banner_image {
+    background-position: center;
   }
 }
 
